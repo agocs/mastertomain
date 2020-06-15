@@ -54,3 +54,5 @@ If something's messed up, no need to worry! If you haven't changed your default 
 git branch -d main
 git push -d origin main #replace "origin" with the name of your remote if necessary
 ```
+
+This will remove the `main` branch both locally and remotely, so you can make whatever changes you need to make to your master before re-running the script.
