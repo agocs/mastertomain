@@ -46,4 +46,11 @@ Afterwards, run
 to remove the master branch.
 ```
 
+## Something's gone wrong!
 
+If something's messed up, no need to worry! If you haven't changed your default branch, you can undo these changes by:
+
+```
+git branch -d main
+git push -d origin main #replace "origin" with the name of your remote if necessary
+```

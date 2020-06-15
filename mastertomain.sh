@@ -13,9 +13,9 @@ URLPART=`git remote get-url ${REMOTE} | cut -d ":" -f 2 | cut -d "." -f 1`
 
 # Make sure your master branch is up to date
 git checkout master
-git pull origin master # assumption: your remote is called "origin"
+git pull ${REMOTE} master 
 
-git checkout -b main # copy master into main
+checkout -b main # copy master into main
 git push origin main # push main branch
 
 echo "OK! The main branch has been pushed to your remote. Click on the following link to set it to the default branch!"
