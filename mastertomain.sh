@@ -22,9 +22,23 @@ echo "OK! The main branch has been pushed to your remote. Click on the following
 echo ""
 echo ">>>>> https://github.com/${URLPART}/settings/branches"
 echo ""
-echo "Afterwards, run"
+echo "Once you've done that, I'll clean up here by running the following commands:"
+echo "  - git branch -d master"
+echo "  - git push -d ${REMOTE} master"
+echo "  - git remote set-head ${REMOTE} main"
 echo ""
-echo ">>>>> git branch -d master"
-echo ">>>>> git push -d ${REMOTE} master"
-echo ""
-echo "to remove the master branch."
+echo "If you'd like to continue, press y. Otherwise, press any other key."
+
+read -r -p "Continue? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY]) 
+	echo "OK, cleaning up!"
+        git branch -d master
+	git push -d ${REMOTE} master
+	git remote set-head ${REMOTE} main
+        ;;
+    *)
+	echo "OK, exiting without changing anything else"
+        exit 1
+        ;;
+esac

@@ -22,29 +22,44 @@ You should see the following output:
 
 ```
 Already on 'master'
-Your branch is up to date with 'origin/master'.
-From github.com:agocs/rabbit-mq-stress-tester
+Warning: Permanently added the RSA host key for IP address '140.82.114.3' to the list of known hosts.
+From github.com:agocs/fullwidth
  * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
 Already up to date.
 Switched to a new branch 'main'
+Warning: Permanently added the RSA host key for IP address '140.82.113.3' to the list of known hosts.
 Total 0 (delta 0), reused 0 (delta 0)
 remote:
 remote: Create a pull request for 'main' on GitHub by visiting:
-remote:      https://github.com/agocs/rabbit-mq-stress-tester/pull/new/main
+remote:      https://github.com/agocs/fullwidth/pull/new/main
 remote:
-To github.com:agocs/rabbit-mq-stress-tester.git
+To github.com:agocs/fullwidth.git
  * [new branch]      main -> main
 OK! The main branch has been pushed to your remote. Click on the following link to set it to the default branch!
 
->>>>> https://github.com/agocs/rabbit-mq-stress-tester/settings/branches
+>>>>> https://github.com/agocs/fullwidth/settings/branches
 
-Afterwards, run
+Once you've done that, I'll clean up here by running the following commands:
+  - git branch -d master
+  - git push -d origin master
+  - git remote set-head origin main
 
->>>>> git branch -d master
->>>>> git push -d origin master
-
-to remove the master branch.
+If you'd like to continue, press y. Otherwise, press any other key.
+Continue? [y/N]
 ```
+
+If everything looks good, press `y` (and then press enter), and the script will clean up for you.
+
+```
+If you'd like to continue, press y. Otherwise, press any other key.
+Continue? [y/N] y
+OK, cleaning up!
+Deleted branch master (was 62e9a23).
+To github.com:agocs/fullwidth.git
+ - [deleted]         master
+```
+
 
 ## Something's gone wrong!
 
