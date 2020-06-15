@@ -1,5 +1,5 @@
 #! /bin/sh
-
+set -e
 
 REMOTE=origin
 
@@ -15,7 +15,7 @@ URLPART=`git remote get-url ${REMOTE} | cut -d ":" -f 2 | cut -d "." -f 1`
 git checkout master
 git pull ${REMOTE} master 
 
-checkout -b main # copy master into main
+git checkout -b main # copy master into main
 git push origin main # push main branch
 
 echo "OK! The main branch has been pushed to your remote. Click on the following link to set it to the default branch!"
