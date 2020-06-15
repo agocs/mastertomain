@@ -16,7 +16,7 @@ git checkout master
 git pull ${REMOTE} master 
 
 git checkout -b main # copy master into main
-git push origin main # push main branch
+git push ${REMOTE} main # push main branch
 
 echo "OK! The main branch has been pushed to your remote. Click on the following link to set it to the default branch!"
 echo ""
