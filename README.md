@@ -49,7 +49,7 @@ If you'd like to continue, press y. Otherwise, press any other key.
 Continue? [y/N]
 ```
 
-If everything looks good, press `y` (and then press enter), and the script will clean up for you.
+Now click the link into Github and change your default branch! If everything looks good, press `y` (and then press enter), and the script will clean up for you.
 
 ```
 If you'd like to continue, press y. Otherwise, press any other key.
